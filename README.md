@@ -1,2 +1,2 @@
-# demo-c4-plantuml
-Demo of a web site generated from an action model with C4 PlantUML diagrams
+# Demo C4 PlantUML Action Site
+Demo of a [web site](https://docs.nasdanika.org/demo-c4-plantuml/) generated from an action model with PlantUML C4 representations.

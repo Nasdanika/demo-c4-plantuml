@@ -1,0 +1,108 @@
+app-action:
+  icon: https://docs.nasdanika.org/images/nasdanika-logo.png
+  text: Nasdanika
+  location: https://www.nasdanika.org 
+  tooltip: Root action
+  children:
+    - app-action:
+        text: Internet Banking System
+        location: ${base-uri}index.html 
+        tooltip: Principal action
+        content:
+          content-markdown: 
+            source:
+              content-text: |+2
+                This is a demo of a web site generated from an action model with [PlantUML](https://www.plantuml.com) [C4](https://c4model.com/) representations.
+                Diagram elements below are linked to the pages (actions) of respective components. 
+                
+                ```uml-resource
+                context.puml
+                ```
+                
+                Detailed description goes here.
+                
+        children:
+          - app-action:
+              icon: fas fa-user
+              text: Customer
+              location: customer.html
+              content:
+                content-markdown:
+                  source:
+                    content-resource: customer.md              
+          - app-action:
+              text: Internet Banking System
+              location: systems/internet-banking/index.html
+              content:
+                content-markdown:
+                  source:
+                    content-resource: systems/internet-banking/readme.md
+              children:
+                - app-label:
+                    text: Applications
+                    icon: fas fa-server
+                    children:
+                      - app-action:
+                          text: Web
+                          location: applications/web/index.html
+                      - app-action:
+                          text: Single-Page
+                          location: applications/spa/index.html
+                      - app-action:
+                          text: Mobile
+                          icon: fas fa-mobile-alt
+                          location: applications/mobile/index.html
+                      - app-action:
+                          text: API
+                          location: applications/api/index.html
+                          content:
+                            content-markdown:
+                              source:
+                                content-resource: systems/internet-banking/applications/api/readme.md     
+                          children:
+                            - app-action:
+                                text: Sign In Controller
+                                location: controllers/sign-in/index.html                           
+                            - app-action:
+                                text: Accounts Summary Controller
+                                location: controllers/accounts-summary/index.html                           
+                            - app-action:
+                                text: Security Component
+                                location: beans/security-component/index.html                           
+                            - app-action:
+                                text: Mainframe Banking System Facade
+                                location: facades/mainframe/index.html                           
+                - app-action:
+                    text: Database
+                    icon: fas fa-database
+                    location: database/index.html
+                                        
+          - app-action:
+              text: E-mail system
+              location: systems/external/e-mail.html
+              content:
+                content-markdown:
+                  source:
+                    content-resource: systems/external/e-mail.md              
+          - app-action:
+              text: Mainframe Banking System
+              location: systems/external/mainframe.html
+              content:
+                content-markdown:
+                  source:
+                    content-resource: systems/external/mainframe.md              
+    - app-action:
+        location: ${base-uri}search.html
+        icon: fas fa-search
+        text: Search
+        content:
+          content-interpolator:
+            source:
+              content-resource: search.html
+  navigation:
+    - app-action:
+        icon: fab fa-github
+        text: Source
+        location: https://github.com/Nasdanika/demo-action-site
+          
+          
