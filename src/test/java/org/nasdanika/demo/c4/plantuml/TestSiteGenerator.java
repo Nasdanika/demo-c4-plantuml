@@ -124,7 +124,7 @@ public class TestSiteGenerator {
 		Map<String, Collection<String>> errors = actionSiteGenerator.generate(
 				rootActionURI, 
 				pageTemplateURI, 
-				"https://nasdanika.org/demo-action-site", 
+				"https://nasdanika.org/demo-c4-plantuml", 
 				new File("docs"), 
 				new File("target/action-site"), 
 				false);
