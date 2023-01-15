@@ -8,12 +8,12 @@
 
 title System Context diagram for Internet Banking System
 
-Person(customer  , Customer , "<$user> <$mobile_user>\n A customer of the bank, with personal bank accounts", $link="customer.html")
+Person(customer  , Customer , "<$user> <$mobile_user>\n A customer of the bank, with personal bank accounts", $link="${action-uri/nasdanika://customer}")
 
-System(banking_system, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.", $link="systems/internet-banking/index.html")
+System(banking_system, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.", $link="${action-uri/nasdanika://internet-banking-system}")
 
-System_Ext(mail_system, "E-mail system", "The internal Microsoft Exchange e-mail system.", $link="systems/external/e-mail.html")
-System_Ext(mainframe, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.", $link="systems/external/mainframe.html")
+System_Ext(mail_system, "E-mail system", "The internal Microsoft Exchange e-mail system.", $link="${action-uri/nasdanika://e-mail}")
+System_Ext(mainframe, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.", $link="${action-uri/nasdanika://mainframe}")
 
 Rel(customer, banking_system, "Uses")
 Rel_Back(customer, mail_system, "Sends e-mails to")

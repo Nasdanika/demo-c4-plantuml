@@ -8,6 +8,8 @@ app-action:
         text: Internet Banking System
         location: ${base-uri}index.html 
         tooltip: Principal action
+        representations:
+          context: context.puml
         content:
           content-markdown: 
             source:
@@ -15,8 +17,8 @@ app-action:
                 This is a demo of a web site generated from an action model with [PlantUML](https://www.plantuml.com) [C4](https://c4model.com/) representations.
                 Diagram elements below are linked to the pages (actions) of respective components. 
                 
-                ```uml-resource
-                context.puml
+                ```uml
+                ${representations/context}
                 ```
                 
                 Detailed description goes here.
@@ -25,6 +27,7 @@ app-action:
           - app-action:
               icon: fas fa-user
               text: Customer
+              uris: nasdanika://customer
               location: customer.html
               content:
                 content-markdown:
@@ -32,6 +35,7 @@ app-action:
                     content-resource: customer.md              
           - app-action:
               text: Internet Banking System
+              uris: nasdanika://internet-banking-system
               location: systems/internet-banking/index.html
               content:
                 content-markdown:
@@ -79,6 +83,7 @@ app-action:
                                         
           - app-action:
               text: E-mail system
+              uris: nasdanika://e-mail
               location: systems/external/e-mail.html
               content:
                 content-markdown:
@@ -86,6 +91,7 @@ app-action:
                     content-resource: systems/external/e-mail.md              
           - app-action:
               text: Mainframe Banking System
+              uris: nasdanika://mainframe
               location: systems/external/mainframe.html
               content:
                 content-markdown:
