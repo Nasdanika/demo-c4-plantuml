@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <title>Mobile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css">
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9BRJVLK8CC');
+</script>    
+
+<script src="../../../../search-documents.js"></script>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
+<script>
+// Script for full-text search of JsTree
+
+window.nsdJsTreeSearchCallback = function(str, node) { 
+    var sf = new $.vakata.search(str, true, { caseSensitive : false, fuzzy : false }); 
+    if (sf.search(node.text).isMatch) {
+		return true;
+	} 
+    let searchResult = this.search(str); 
+    for (const sr in searchResult) {
+        if (searchResult[sr].ref === node.original['data-nsd-label-uuid']) {
+            return true;
+        } 
+    } 
+    return false; 
+}.bind(lunr(function () {
+			  this.ref('id');
+			  this.field('title');
+			  this.field('content');
+
+			  for (const key in searchDocuments) {
+				  let doc = searchDocuments[key];
+				this.add({
+					id: doc['action-uuid'],
+					title: doc.title,
+					path: doc.path,
+					content: doc.content
+				});  
+			  }
+			}));
+</script>
+</head>
+  <body>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://www.nasdanika.org" title="Root action" data-nsd-label-uuid="d45ea467-11ce-414e-b082-105c29c67d30" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item">
+              <a href="../../../../search.html" data-nsd-label-uuid="95b27e90-e265-442f-9cf9-64eb26861c9c" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../../../semantic-map.html" data-nsd-label-uuid="e61731f9-ea29-4e4d-a529-c6b81113d4c6" class="nav-link">Semantic map</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="../../../../index.html" title="Principal action" data-nsd-label-uuid="7021d0ef-f4c4-4643-b0d6-5a87434a021b" class="navbar-brand">Internet Banking System</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_78" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_78" class="collapse navbar-collapse"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <input type="text" id="2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1">
+          <div id="2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel"></div>
+          <script>$(document).ready( function() {
+$('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../../../../customer.html';"},"data-nsd-label-uuid":"46f6a98c-a28f-44ee-9583-638292776cd0","icon":"fas fa-user","id":"nsd-app-nav-item-48a8dfa5-decf-4810-8e64-56f577e173ed","text":"Customer","type":"leaf"},{"a_attr":{"onclick":"window.location='../../index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='../web/index.html';"},"data-nsd-label-uuid":"412a429a-2ce3-4b65-a50a-c0650e2f3ee2","id":"nsd-app-nav-item-8e5cd3bc-559a-4301-b9b7-ed05cf50e245","text":"Web","type":"leaf"},{"a_attr":{"onclick":"window.location='../spa/index.html';"},"data-nsd-label-uuid":"30c934c2-ba5b-46d3-b3fd-d79da711c5a3","id":"nsd-app-nav-item-d3353917-c6ba-4124-b46e-518cffe91fda","text":"Single-Page","type":"leaf"},{"data-nsd-label-uuid":"80566450-bfc0-4133-9055-aa6920beda30","icon":"fas fa-mobile-alt","state":{"selected":true},"id":"nsd_7c","text":"Mobile","type":"leaf"},{"a_attr":{"onclick":"window.location='../api/index.html';"},"children":[{"a_attr":{"onclick":"window.location='../api/controllers/sign-in/index.html';"},"data-nsd-label-uuid":"a58b898d-047a-43fd-95de-7655cd0d1349","id":"nsd-app-nav-item-5d3f02e8-ca6a-4ecf-98e9-138fb05f2c1a","text":"Sign In Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../api/controllers/accounts-summary/index.html';"},"data-nsd-label-uuid":"6d1bccf6-9708-4b20-ad2a-08512c9998a3","id":"nsd-app-nav-item-4622fe70-30e6-4061-9b05-f998bef796c7","text":"Accounts Summary Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../api/beans/security-component/index.html';"},"data-nsd-label-uuid":"bc243602-c82c-4e8c-95ae-3aecee2ba03c","id":"nsd-app-nav-item-ca6bae5c-e9e6-440d-8ba4-6667e8620732","text":"Security Component","type":"leaf"},{"a_attr":{"onclick":"window.location='../api/facades/mainframe/index.html';"},"data-nsd-label-uuid":"409105b7-1a93-418a-9c64-389aea869711","id":"nsd-app-nav-item-1f8375af-cfe3-4497-8320-6cb222471470","text":"Mainframe Banking System Facade","type":"leaf"}],"data-nsd-label-uuid":"c2cc7ef2-cb45-4c28-bb15-45a02e239f8a","id":"nsd-app-nav-item-d44d78fe-f5c3-461b-8a63-a0b41e7688a6","text":"API"}],"icon":"fas fa-server","id":"nsd_7i","text":"Applications"},{"a_attr":{"onclick":"window.location='../../database/index.html';"},"data-nsd-label-uuid":"11ad4e45-fde8-4288-8ff7-a71f84ff15f5","icon":"fas fa-database","id":"nsd-app-nav-item-c68f230c-21cb-431f-bb0a-a45cffbdac2b","text":"Database","type":"leaf"}],"data-nsd-label-uuid":"789db094-2e81-43ad-87db-72d5af200a86","id":"nsd-app-nav-item-53f03013-9818-46c1-bbe3-496e30a0c622","text":"Internet Banking System"},{"a_attr":{"onclick":"window.location='../../../external/e-mail.html';"},"data-nsd-label-uuid":"2f14b75b-24ba-4bb9-84e9-1bf5a7f3859e","id":"nsd-app-nav-item-e23a68cb-404e-4683-97e1-67f0a0bed09c","text":"E-mail system","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../external/mainframe.html';"},"data-nsd-label-uuid":"40ca8b37-1f63-4dae-8e56-2ae86e043f01","id":"nsd-app-nav-item-ed876764-2535-412e-ba8e-89e16b93b761","text":"Mainframe Banking System","type":"leaf"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel"}}));
+// Tokens: searchInputSelector, timer, treeSelector
+$('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput').keyup(function () {
+    if (window['nsd_jstTreeSearchTimer_nsd_7n']) { 
+		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_7n']); 
+	}
+    window['nsd_jstTreeSearchTimer_nsd_7n'] = setTimeout(function () {
+      var v = $('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput').val();
+      $('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel').jstree(true).search(v);
+    }, 250);
+  });
+
+});</script>
+        </div>
+        <div data-nsd-label-uuid="80566450-bfc0-4133-9055-aa6920beda30" data-nsd-action-uris="nasdanika://internet-banking-system/children/0/children/2" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-breadcrumb-row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../../index.html" data-nsd-label-uuid="789db094-2e81-43ad-87db-72d5af200a86">Internet Banking System</a>
+                    </li>
+                    <li class="breadcrumb-item"><span><span class="fas fa-server nsd-app-label-icon"></span>Applications</span>
+                    </li>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="80566450-bfc0-4133-9055-aa6920beda30"><span class="fas fa-mobile-alt nsd-app-label-icon"></span>Mobile</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <h1><span data-nsd-label-uuid="80566450-bfc0-4133-9055-aa6920beda30" class="nsd-app-content-panel-title"><span class="fas fa-mobile-alt nsd-app-label-icon"></span>Mobile</span>
+                </h1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika/demo-action-site" data-nsd-label-uuid="e38206d6-e8d6-4404-a864-61fee623577f" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Source</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

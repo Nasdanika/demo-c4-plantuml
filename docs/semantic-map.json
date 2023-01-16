@@ -1,0 +1,55 @@
+{
+    "nasdanika://e-mail": {
+        "location": "systems/external/e-mail.html",
+        "text": "E-mail system"
+    },
+    "nasdanika://internet-banking-system/children/0": {"text": "Applications"},
+    "nasdanika://internet-banking-system": {
+        "location": "systems/internet-banking/index.html",
+        "text": "Internet Banking System"
+    },
+    "nasdanika://internet-banking-system/children/1": {
+        "location": "systems/internet-banking/database/index.html",
+        "text": "Database"
+    },
+    "nasdanika://internet-banking-system/children/0/children/3/children/1": {
+        "location": "systems/internet-banking/applications/api/controllers/accounts-summary/index.html",
+        "text": "Accounts Summary Controller"
+    },
+    "nasdanika://internet-banking-system/children/0/children/3/children/0": {
+        "location": "systems/internet-banking/applications/api/controllers/sign-in/index.html",
+        "text": "Sign In Controller"
+    },
+    "nasdanika://internet-banking-system/children/0/children/0": {
+        "location": "systems/internet-banking/applications/web/index.html",
+        "text": "Web"
+    },
+    "nasdanika://internet-banking-system/children/0/children/1": {
+        "location": "systems/internet-banking/applications/spa/index.html",
+        "text": "Single-Page"
+    },
+    "nasdanika://customer": {
+        "location": "customer.html",
+        "text": "Customer"
+    },
+    "nasdanika://internet-banking-system/children/0/children/2": {
+        "location": "systems/internet-banking/applications/mobile/index.html",
+        "text": "Mobile"
+    },
+    "nasdanika://internet-banking-system/children/0/children/3": {
+        "location": "systems/internet-banking/applications/api/index.html",
+        "text": "API"
+    },
+    "nasdanika://internet-banking-system/children/0/children/3/children/3": {
+        "location": "systems/internet-banking/applications/api/facades/mainframe/index.html",
+        "text": "Mainframe Banking System Facade"
+    },
+    "nasdanika://internet-banking-system/children/0/children/3/children/2": {
+        "location": "systems/internet-banking/applications/api/beans/security-component/index.html",
+        "text": "Security Component"
+    },
+    "nasdanika://mainframe": {
+        "location": "systems/external/mainframe.html",
+        "text": "Mainframe Banking System"
+    }
+}
