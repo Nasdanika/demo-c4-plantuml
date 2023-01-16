@@ -31,7 +31,6 @@
 					<action>model/actions.yml</action>
 					<pageTemplate>model/page-template.yml</pageTemplate>
 					<progressOutput>target/action-site-progress.txt</progressOutput>
-					<outputDirectory>docs</outputDirectory>
 					<diagramGenerators>
 						<diagramGenerator implementation="org.nasdanika.diagramgenerator.plantuml.PlantUMLDiagramGenerator"/>
 					</diagramGenerators>
