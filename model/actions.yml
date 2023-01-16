@@ -105,6 +105,13 @@ app-action:
           content-interpolator:
             source:
               content-resource: search.html
+    - app-action:
+        location: ${base-uri}semantic-map.html
+        text: Semantic map
+        content:
+          content-interpolator:
+            source:
+              content-resource: semantic-map.html
   navigation:
     - app-action:
         icon: fab fa-github

@@ -72,11 +72,14 @@ window.nsdJsTreeSearchCallback = function(str, node) {
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
-          <a href="https://www.nasdanika.org" title="Root action" data-nsd-label-uuid="237eb272-4483-41ac-948a-0ab21b1b03c4" class="nsd-app-header-title">
+          <a href="https://www.nasdanika.org" title="Root action" data-nsd-label-uuid="ac92db4f-a4bd-47f4-ac4a-03d75b5c540b" class="nsd-app-header-title">
             <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="../../../../../../search.html" data-nsd-label-uuid="21a5bf2d-5d73-4243-b549-7f332d6d5c0f" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a href="../../../../../../search.html" data-nsd-label-uuid="f0554388-1de1-4250-85b1-09334cefe50c" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../../../../../semantic-map.html" data-nsd-label-uuid="66454ae9-abd9-4fc3-811f-66adfcdac765" class="nav-link">Semantic map</a>
             </li>
           </ul>
         </div>
@@ -84,47 +87,47 @@ window.nsdJsTreeSearchCallback = function(str, node) {
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a href="../../../../../../index.html" title="Principal action" data-nsd-label-uuid="c5e179ec-29ba-43d8-8ded-2260945a0ec7" class="navbar-brand">Internet Banking System</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_43" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <a href="../../../../../../index.html" title="Principal action" data-nsd-label-uuid="fc7d95fb-fc45-4e38-b3e2-c68fc418eea4" class="navbar-brand">Internet Banking System</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_78" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_43" class="collapse navbar-collapse"></div>
+            <div id="nsd_78" class="collapse navbar-collapse"></div>
           </ul>
         </div>
       </div>
       <div class="row nsd-app-content-row">
         <div class="col nsd-app-navigation-panel">
-          <input type="text" id="e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1">
-          <div id="e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel"></div>
+          <input type="text" id="45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1">
+          <div id="45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel"></div>
           <script>$(document).ready( function() {
-$('#e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../../../../../../customer.html';"},"data-nsd-label-uuid":"90582fd6-a091-4446-a781-68423c83b591","icon":"fas fa-user","id":"nsd-app-nav-item-e7799cbf-3a4e-485b-82b6-009da87d46f1","text":"Customer","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../../index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='../../../web/index.html';"},"data-nsd-label-uuid":"7e918d74-d0ce-4ec3-bbf4-b19c9a9723da","id":"nsd-app-nav-item-b0e17565-4382-4e89-bd8a-49d22283c0e6","text":"Web","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../spa/index.html';"},"data-nsd-label-uuid":"3bdf3ca3-73c9-40f1-bb65-c6656b23502e","id":"nsd-app-nav-item-23dda976-4d9f-433d-8ef4-34170c39d3b4","text":"Single-Page","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../mobile/index.html';"},"data-nsd-label-uuid":"df547630-2f1a-43c7-ba12-8fcf243de5ff","icon":"fas fa-mobile-alt","id":"nsd-app-nav-item-9f45f9bf-33b7-4e71-80fa-84f1d851865b","text":"Mobile","type":"leaf"},{"a_attr":{"onclick":"window.location='../../index.html';"},"children":[{"data-nsd-label-uuid":"add2c7c5-80c4-478a-a41c-92c12bac1a16","state":{"selected":true},"id":"nsd_48","text":"Sign In Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../accounts-summary/index.html';"},"data-nsd-label-uuid":"fc174d32-7b98-40fc-8010-6e59c94a8981","id":"nsd-app-nav-item-216ca09a-f3a2-4c44-8029-41aaa88e1156","text":"Accounts Summary Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../../beans/security-component/index.html';"},"data-nsd-label-uuid":"b9548658-2cb6-45be-abcd-a34cfb9130db","id":"nsd-app-nav-item-892479f9-9220-4a5c-ac72-f34610e0cbf7","text":"Security Component","type":"leaf"},{"a_attr":{"onclick":"window.location='../../facades/mainframe/index.html';"},"data-nsd-label-uuid":"80e0eccd-1f03-4a9d-8a43-fdbe8d1e6eb1","id":"nsd-app-nav-item-d38e21e3-7e64-4c31-99d0-64da9b910ba4","text":"Mainframe Banking System Facade","type":"leaf"}],"data-nsd-label-uuid":"3213d019-8388-4771-a36d-33c5ad8b7743","id":"nsd-app-nav-item-7eef8765-503c-4feb-a357-92a6c1af7b88","text":"API"}],"icon":"fas fa-server","id":"nsd_4d","text":"Applications"},{"a_attr":{"onclick":"window.location='../../../../database/index.html';"},"data-nsd-label-uuid":"bd41e4e0-afd2-4a76-8e90-ea99bc2ecc19","icon":"fas fa-database","id":"nsd-app-nav-item-f2938709-230e-48f5-93d9-90896cdf3e0e","text":"Database","type":"leaf"}],"data-nsd-label-uuid":"7d75575b-5ced-4b20-8afa-ff9c064444bb","id":"nsd-app-nav-item-2b1a2951-3b64-4b2e-ba45-4a64e993134d","text":"Internet Banking System"},{"a_attr":{"onclick":"window.location='../../../../../external/e-mail.html';"},"data-nsd-label-uuid":"da5f49e8-aaae-42a2-acfa-01a24ef3e69c","id":"nsd-app-nav-item-57e269ea-e658-4c8d-a183-a569b79551a0","text":"E-mail system","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../../../external/mainframe.html';"},"data-nsd-label-uuid":"e493de81-be98-4a55-a02e-78735865d7e9","id":"nsd-app-nav-item-cca1b989-a5db-4661-a449-52976849716e","text":"Mainframe Banking System","type":"leaf"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel"}}));
+$('#45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../../../../../../customer.html';"},"data-nsd-label-uuid":"d9e0b5d3-6cf4-4c15-92e8-ad8c04e25edb","icon":"fas fa-user","id":"nsd-app-nav-item-75018a18-068e-4497-aaf0-dfe682fa03d2","text":"Customer","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../../index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='../../../web/index.html';"},"data-nsd-label-uuid":"e8d4a968-1727-4f3b-89ae-7c3a27c00387","id":"nsd-app-nav-item-3f4e6279-b27e-42e3-8737-908a4464a846","text":"Web","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../spa/index.html';"},"data-nsd-label-uuid":"1736cc26-3b69-4a72-917e-15fbb6e11f83","id":"nsd-app-nav-item-6ec8455a-7751-4f33-b567-4a0f7e088559","text":"Single-Page","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../mobile/index.html';"},"data-nsd-label-uuid":"606ddec9-c1e7-409e-b69e-3b1f9a118827","icon":"fas fa-mobile-alt","id":"nsd-app-nav-item-ba3d18cd-e71a-43f9-8da5-7df3b3cd6450","text":"Mobile","type":"leaf"},{"a_attr":{"onclick":"window.location='../../index.html';"},"children":[{"data-nsd-label-uuid":"eba71cd6-924f-41ff-a066-859aabfd2ae6","state":{"selected":true},"id":"nsd_7d","text":"Sign In Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../accounts-summary/index.html';"},"data-nsd-label-uuid":"6e0c1f04-0fac-4522-ba8a-88ff4ee3a548","id":"nsd-app-nav-item-4a8f273f-f264-4147-a2ae-4ad9934aa958","text":"Accounts Summary Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../../beans/security-component/index.html';"},"data-nsd-label-uuid":"84ce4fbc-f063-4f68-8582-6b94e1d159dc","id":"nsd-app-nav-item-2a5949b0-2baa-449e-81d0-5f8962a388c8","text":"Security Component","type":"leaf"},{"a_attr":{"onclick":"window.location='../../facades/mainframe/index.html';"},"data-nsd-label-uuid":"781285ee-f0a8-418a-a244-1229b4ce9259","id":"nsd-app-nav-item-04850630-a238-4839-bfd1-5f8008aa92e3","text":"Mainframe Banking System Facade","type":"leaf"}],"data-nsd-label-uuid":"0b027882-bbf2-4238-8859-3229ee5a3689","id":"nsd-app-nav-item-e3626482-613e-4e06-9601-c0e7c69dfda2","text":"API"}],"icon":"fas fa-server","id":"nsd_7i","text":"Applications"},{"a_attr":{"onclick":"window.location='../../../../database/index.html';"},"data-nsd-label-uuid":"c52332a7-af40-4002-ab60-98c8fac766c7","icon":"fas fa-database","id":"nsd-app-nav-item-b36fec48-8771-4881-ab64-33961284d209","text":"Database","type":"leaf"}],"data-nsd-label-uuid":"62f975df-7624-4e62-ab12-ca23c06af3bd","id":"nsd-app-nav-item-659b5d36-ee8d-4135-894a-345b6aa6e617","text":"Internet Banking System"},{"a_attr":{"onclick":"window.location='../../../../../external/e-mail.html';"},"data-nsd-label-uuid":"09a38eff-824d-4d17-9e1f-38531ae1f5be","id":"nsd-app-nav-item-2e285562-fb7f-43d7-9153-24d714334c66","text":"E-mail system","type":"leaf"},{"a_attr":{"onclick":"window.location='../../../../../external/mainframe.html';"},"data-nsd-label-uuid":"91c93d83-0f7e-484f-a009-7ecf6400b005","id":"nsd-app-nav-item-91c6db92-75dd-4e34-b2cc-3e5a6aba16cf","text":"Mainframe Banking System","type":"leaf"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel"}}));
 // Tokens: searchInputSelector, timer, treeSelector
-$('#e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel_searchInput').keyup(function () {
-    if (window['nsd_jstTreeSearchTimer_nsd_4i']) { 
-		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_4i']); 
+$('#45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel_searchInput').keyup(function () {
+    if (window['nsd_jstTreeSearchTimer_nsd_7n']) { 
+		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_7n']); 
 	}
-    window['nsd_jstTreeSearchTimer_nsd_4i'] = setTimeout(function () {
-      var v = $('#e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel_searchInput').val();
-      $('#e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel').jstree(true).search(v);
+    window['nsd_jstTreeSearchTimer_nsd_7n'] = setTimeout(function () {
+      var v = $('#45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel_searchInput').val();
+      $('#45eba383-92ca-401f-bfd9-f4bf185cdad3-navigation-panel').jstree(true).search(v);
     }, 250);
   });
 
 });</script>
         </div>
-        <div data-nsd-label-uuid="add2c7c5-80c4-478a-a41c-92c12bac1a16" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="eba71cd6-924f-41ff-a066-859aabfd2ae6" data-nsd-action-uris="nasdanika://internet-banking-system/children/0/children/3/children/0" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
                 <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="../../../../index.html" data-nsd-label-uuid="7d75575b-5ced-4b20-8afa-ff9c064444bb">Internet Banking System</a>
+                      <a href="../../../../index.html" data-nsd-label-uuid="62f975df-7624-4e62-ab12-ca23c06af3bd">Internet Banking System</a>
                     </li>
                     <li class="breadcrumb-item"><span><span class="fas fa-server nsd-app-label-icon"></span>Applications</span>
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="../../index.html" data-nsd-label-uuid="3213d019-8388-4771-a36d-33c5ad8b7743">API</a>
+                      <a href="../../index.html" data-nsd-label-uuid="0b027882-bbf2-4238-8859-3229ee5a3689">API</a>
                     </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="add2c7c5-80c4-478a-a41c-92c12bac1a16">Sign In Controller</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="eba71cd6-924f-41ff-a066-859aabfd2ae6">Sign In Controller</span>
                     </li>
                   </ol>
                 </nav>
@@ -132,7 +135,7 @@ $('#e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel_searchInput').keyup(fu
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span data-nsd-label-uuid="add2c7c5-80c4-478a-a41c-92c12bac1a16" class="nsd-app-content-panel-title">Sign In Controller</span>
+                <h1><span data-nsd-label-uuid="eba71cd6-924f-41ff-a066-859aabfd2ae6" class="nsd-app-content-panel-title">Sign In Controller</span>
                 </h1>
               </div>
             </div>
@@ -148,7 +151,7 @@ $('#e5182fbb-c42e-4515-9630-9b0cbf1c34c7-navigation-panel_searchInput').keyup(fu
         <div class="col nsd-app-footer">
           <ul class="nav nsd-app-footer-navs">
             <li class="nav-item">
-              <a href="https://github.com/Nasdanika/demo-action-site" data-nsd-label-uuid="8b57e911-04e8-441d-b79f-7623c2c162c3" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Source</a>
+              <a href="https://github.com/Nasdanika/demo-action-site" data-nsd-label-uuid="ea5a7e4f-eaa4-4392-a3f9-31ba33b57023" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Source</a>
             </li>
           </ul>
         </div>
