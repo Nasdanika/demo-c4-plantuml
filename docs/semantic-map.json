@@ -44,12 +44,12 @@
         "location": "systems/internet-banking/applications/api/facades/mainframe/index.html",
         "text": "Mainframe Banking System Facade"
     },
-    "nasdanika://internet-banking-system/children/0/children/3/children/2": {
-        "location": "systems/internet-banking/applications/api/beans/security-component/index.html",
-        "text": "Security Component"
-    },
     "nasdanika://mainframe": {
         "location": "systems/external/mainframe.html",
         "text": "Mainframe Banking System"
+    },
+    "nasdanika://internet-banking-system/children/0/children/3/children/2": {
+        "location": "systems/internet-banking/applications/api/beans/security-component/index.html",
+        "text": "Security Component"
     }
 }

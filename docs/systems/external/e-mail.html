@@ -72,14 +72,14 @@ window.nsdJsTreeSearchCallback = function(str, node) {
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
-          <a href="https://www.nasdanika.org" title="Root action" data-nsd-label-uuid="d45ea467-11ce-414e-b082-105c29c67d30" class="nsd-app-header-title">
+          <a href="https://www.nasdanika.org" title="Root action" data-nsd-label-uuid="936ffb20-882c-4ba1-82b6-3b5ac70987ee" class="nsd-app-header-title">
             <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="../../search.html" data-nsd-label-uuid="95b27e90-e265-442f-9cf9-64eb26861c9c" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a href="../../search.html" data-nsd-label-uuid="15945745-038d-4527-8e50-9f884b12923d" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
             </li>
             <li class="nav-item">
-              <a href="../../semantic-map.html" data-nsd-label-uuid="e61731f9-ea29-4e4d-a529-c6b81113d4c6" class="nav-link">Semantic map</a>
+              <a href="../../semantic-map.html" data-nsd-label-uuid="53865a44-3db0-49a7-a801-4b7a3026353d" class="nav-link">Semantic map</a>
             </li>
           </ul>
         </div>
@@ -87,37 +87,37 @@ window.nsdJsTreeSearchCallback = function(str, node) {
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a href="../../index.html" title="Principal action" data-nsd-label-uuid="7021d0ef-f4c4-4643-b0d6-5a87434a021b" class="navbar-brand">Internet Banking System</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_44" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <a href="../../index.html" title="Principal action" data-nsd-label-uuid="adbe87ba-414e-42b9-9164-2d3c2f207bad" class="navbar-brand">Internet Banking System</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_3o" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_44" class="collapse navbar-collapse"></div>
+            <div id="nsd_3o" class="collapse navbar-collapse"></div>
           </ul>
         </div>
       </div>
       <div class="row nsd-app-content-row">
         <div class="col nsd-app-navigation-panel">
-          <input type="text" id="2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1">
-          <div id="2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel"></div>
+          <input type="text" id="9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel_searchInput" title="Full-text search. You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'" class="form-control mt-1">
+          <div id="9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel"></div>
           <script>$(document).ready( function() {
-$('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../../customer.html';"},"data-nsd-label-uuid":"46f6a98c-a28f-44ee-9583-638292776cd0","icon":"fas fa-user","id":"nsd-app-nav-item-48a8dfa5-decf-4810-8e64-56f577e173ed","text":"Customer","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='../internet-banking/applications/web/index.html';"},"data-nsd-label-uuid":"412a429a-2ce3-4b65-a50a-c0650e2f3ee2","id":"nsd-app-nav-item-8e5cd3bc-559a-4301-b9b7-ed05cf50e245","text":"Web","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/spa/index.html';"},"data-nsd-label-uuid":"30c934c2-ba5b-46d3-b3fd-d79da711c5a3","id":"nsd-app-nav-item-d3353917-c6ba-4124-b46e-518cffe91fda","text":"Single-Page","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/mobile/index.html';"},"data-nsd-label-uuid":"80566450-bfc0-4133-9055-aa6920beda30","icon":"fas fa-mobile-alt","id":"nsd-app-nav-item-5dc3cec5-63c7-4737-bf0d-ed628e3c89f8","text":"Mobile","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/index.html';"},"children":[{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/controllers/sign-in/index.html';"},"data-nsd-label-uuid":"a58b898d-047a-43fd-95de-7655cd0d1349","id":"nsd-app-nav-item-5d3f02e8-ca6a-4ecf-98e9-138fb05f2c1a","text":"Sign In Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/controllers/accounts-summary/index.html';"},"data-nsd-label-uuid":"6d1bccf6-9708-4b20-ad2a-08512c9998a3","id":"nsd-app-nav-item-4622fe70-30e6-4061-9b05-f998bef796c7","text":"Accounts Summary Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/beans/security-component/index.html';"},"data-nsd-label-uuid":"bc243602-c82c-4e8c-95ae-3aecee2ba03c","id":"nsd-app-nav-item-ca6bae5c-e9e6-440d-8ba4-6667e8620732","text":"Security Component","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/facades/mainframe/index.html';"},"data-nsd-label-uuid":"409105b7-1a93-418a-9c64-389aea869711","id":"nsd-app-nav-item-1f8375af-cfe3-4497-8320-6cb222471470","text":"Mainframe Banking System Facade","type":"leaf"}],"data-nsd-label-uuid":"c2cc7ef2-cb45-4c28-bb15-45a02e239f8a","id":"nsd-app-nav-item-d44d78fe-f5c3-461b-8a63-a0b41e7688a6","text":"API"}],"icon":"fas fa-server","id":"nsd_4e","text":"Applications"},{"a_attr":{"onclick":"window.location='../internet-banking/database/index.html';"},"data-nsd-label-uuid":"11ad4e45-fde8-4288-8ff7-a71f84ff15f5","icon":"fas fa-database","id":"nsd-app-nav-item-c68f230c-21cb-431f-bb0a-a45cffbdac2b","text":"Database","type":"leaf"}],"data-nsd-label-uuid":"789db094-2e81-43ad-87db-72d5af200a86","id":"nsd-app-nav-item-53f03013-9818-46c1-bbe3-496e30a0c622","text":"Internet Banking System"},{"data-nsd-label-uuid":"2f14b75b-24ba-4bb9-84e9-1bf5a7f3859e","state":{"selected":true},"id":"nsd_4h","text":"E-mail system","type":"leaf"},{"a_attr":{"onclick":"window.location='mainframe.html';"},"data-nsd-label-uuid":"40ca8b37-1f63-4dae-8e56-2ae86e043f01","id":"nsd-app-nav-item-ed876764-2535-412e-ba8e-89e16b93b761","text":"Mainframe Banking System","type":"leaf"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel"}}));
+$('#9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel').jstree(function(tree) { tree.state.filter = function(state) { delete state.core.selected; return state; };  tree.search.search_callback = function(searchStr, node) { if (typeof window.nsdJsTreeSearchCallback === 'function') return window.nsdJsTreeSearchCallback(searchStr, node); var sf = new $.vakata.search(searchStr, true, { caseSensitive : false, fuzzy : false }); return sf.search(node.text).isMatch; }; return tree; }({"core":{"data":[{"a_attr":{"onclick":"window.location='../../customer.html';"},"data-nsd-label-uuid":"d31ba0e6-6833-400d-8861-3b82acb585d5","icon":"fas fa-user","id":"nsd-app-nav-item-5163d963-a409-4f86-b939-a1b4b7faad09","text":"Customer","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/index.html';"},"children":[{"children":[{"a_attr":{"onclick":"window.location='../internet-banking/applications/web/index.html';"},"data-nsd-label-uuid":"36003088-fead-4121-91d2-8702a4636249","id":"nsd-app-nav-item-a759cf81-54e2-433e-9d28-7004ae2af2db","text":"Web","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/spa/index.html';"},"data-nsd-label-uuid":"194ba31c-1457-4eb8-a656-7c52d75db268","id":"nsd-app-nav-item-5b5eb225-3a98-4745-ad62-58f4cd343319","text":"Single-Page","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/mobile/index.html';"},"data-nsd-label-uuid":"1793fd50-323a-4374-86b8-220cd2ed1bfe","icon":"fas fa-mobile-alt","id":"nsd-app-nav-item-59f2d619-88ee-4c8b-a3e7-c97f875d8282","text":"Mobile","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/index.html';"},"children":[{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/controllers/sign-in/index.html';"},"data-nsd-label-uuid":"89a5e2b3-67d1-482d-8079-2db83811babe","id":"nsd-app-nav-item-c79a8eb2-20c6-4ec1-a6c2-49ae7b99beb0","text":"Sign In Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/controllers/accounts-summary/index.html';"},"data-nsd-label-uuid":"111a25c7-f7ea-4433-b52c-368c04a471a0","id":"nsd-app-nav-item-9cb51393-3497-49fa-918c-8e647f079d9f","text":"Accounts Summary Controller","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/beans/security-component/index.html';"},"data-nsd-label-uuid":"e1d3e12e-4bff-4672-9dde-78b01d2602f9","id":"nsd-app-nav-item-5c94b29a-72b7-4897-b02c-0532cc3d9748","text":"Security Component","type":"leaf"},{"a_attr":{"onclick":"window.location='../internet-banking/applications/api/facades/mainframe/index.html';"},"data-nsd-label-uuid":"4b84e326-984e-456f-bb46-31f04637672a","id":"nsd-app-nav-item-71012f51-5841-46be-af57-4690369ac1ca","text":"Mainframe Banking System Facade","type":"leaf"}],"data-nsd-label-uuid":"a7468023-3501-48ea-bec6-828d3a9bf3ad","id":"nsd-app-nav-item-7e3122a7-65ff-42b6-b6bb-a20a77a7e674","text":"API"}],"icon":"fas fa-server","id":"nsd_3y","text":"Applications"},{"a_attr":{"onclick":"window.location='../internet-banking/database/index.html';"},"data-nsd-label-uuid":"09d5504d-72d2-431d-ad7c-fe473f9bcc67","icon":"fas fa-database","id":"nsd-app-nav-item-e415e4e4-3025-4ac2-acd7-c16ac301f0b4","text":"Database","type":"leaf"}],"data-nsd-label-uuid":"6c00ff4e-921d-43f0-bcf0-5e9e764352ab","id":"nsd-app-nav-item-3d8f3299-22ba-4d91-9a5a-d04e86a098a7","text":"Internet Banking System"},{"data-nsd-label-uuid":"12af446e-d8f4-4618-929f-c3cf6a569010","state":{"selected":true},"id":"nsd_41","text":"E-mail system","type":"leaf"},{"a_attr":{"onclick":"window.location='mainframe.html';"},"data-nsd-label-uuid":"52c050ac-32b3-4f86-a39f-5a14df451f57","id":"nsd-app-nav-item-47e02c06-1ac1-40d8-aed1-ba5177df73fd","text":"Mainframe Banking System","type":"leaf"}]},"search":{"show_only_matches":true,"show_only_matches_children":true},"types":{"leaf":{"icon":"jstree-file"}},"plugins":["state","type","search"],"state":{"key":"9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel"}}));
 // Tokens: searchInputSelector, timer, treeSelector
-$('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput').keyup(function () {
-    if (window['nsd_jstTreeSearchTimer_nsd_4j']) { 
-		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_4j']); 
+$('#9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel_searchInput').keyup(function () {
+    if (window['nsd_jstTreeSearchTimer_nsd_43']) { 
+		clearTimeout(window['nsd_jstTreeSearchTimer_nsd_43']); 
 	}
-    window['nsd_jstTreeSearchTimer_nsd_4j'] = setTimeout(function () {
-      var v = $('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput').val();
-      $('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel').jstree(true).search(v);
+    window['nsd_jstTreeSearchTimer_nsd_43'] = setTimeout(function () {
+      var v = $('#9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel_searchInput').val();
+      $('#9570c328-c4ee-47cd-8543-4d2a53a06530-navigation-panel').jstree(true).search(v);
     }, 250);
   });
 
 });</script>
         </div>
-        <div data-nsd-label-uuid="2f14b75b-24ba-4bb9-84e9-1bf5a7f3859e" data-nsd-action-uris="nasdanika://e-mail" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="12af446e-d8f4-4618-929f-c3cf6a569010" data-nsd-action-uris="nasdanika://e-mail" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <h1><span data-nsd-label-uuid="2f14b75b-24ba-4bb9-84e9-1bf5a7f3859e" class="nsd-app-content-panel-title">E-mail system</span>
+                <h1><span data-nsd-label-uuid="12af446e-d8f4-4618-929f-c3cf6a569010" class="nsd-app-content-panel-title">E-mail system</span>
                 </h1>
               </div>
             </div>
@@ -138,7 +138,7 @@ $('#2281f507-8f7a-4337-bd05-83d0efd7b2bc-navigation-panel_searchInput').keyup(fu
         <div class="col nsd-app-footer">
           <ul class="nav nsd-app-footer-navs">
             <li class="nav-item">
-              <a href="https://github.com/Nasdanika/demo-action-site" data-nsd-label-uuid="e38206d6-e8d6-4404-a864-61fee623577f" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Source</a>
+              <a href="https://github.com/Nasdanika/demo-c4-plantuml" data-nsd-label-uuid="29ecdcb7-5f7e-4224-b04b-8e2682e7fa57" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Source</a>
             </li>
           </ul>
         </div>
