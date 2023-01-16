@@ -116,6 +116,6 @@ app-action:
     - app-action:
         icon: fab fa-github
         text: Source
-        location: https://github.com/Nasdanika/demo-action-site
+        location: https://github.com/Nasdanika/demo-c4-plantuml
           
           
