@@ -27,7 +27,9 @@ app-action:
           - app-action:
               icon: fas fa-user
               text: Customer
-              uris: nasdanika://customer
+              uris: 
+                - nasdanika://customer
+                - nasdanika://user
               location: customer.html
               content:
                 content-markdown:
