@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nasdanika.demo</groupId>
 	<artifactId>c4-plantuml</artifactId>
-	<version>2023.1.1</version>
+	<version>2023.2.0</version>
 	<packaging>jar</packaging>
 	<name>C4 PlantUML action site demo</name>
 	<description>Demo of a web site generated from an action model with PlantUML C4 representations.</description>
@@ -19,7 +19,7 @@
 			<plugin>
 				<groupId>org.nasdanika.html</groupId>
 				<artifactId>site-generator-maven-plugin</artifactId>
-				<version>2023.1.3</version>
+				<version>2023.2.0</version>
 				<executions>
 					<execution>
 						<goals>
