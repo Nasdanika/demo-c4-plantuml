@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nasdanika.demo</groupId>
 	<artifactId>c4-plantuml</artifactId>
-	<version>2023.2.0</version>
+	<version>2023.3.0</version>
 	<packaging>jar</packaging>
 	<name>C4 PlantUML action site demo</name>
 	<description>Demo of a web site generated from an action model with PlantUML C4 representations.</description>
@@ -11,6 +11,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-site-plugin</artifactId>
+				<version>4.0.0-M5</version>
 				<configuration>
 					<skip>true</skip>
 					<skipDeploy>true</skipDeploy>
@@ -19,7 +20,7 @@
 			<plugin>
 				<groupId>org.nasdanika.html</groupId>
 				<artifactId>site-generator-maven-plugin</artifactId>
-				<version>2023.2.2</version>
+				<version>2023.3.0</version>
 				<executions>
 					<execution>
 						<goals>
@@ -30,9 +31,10 @@
 				<configuration>
 					<!-- 8 blank pages -->
 					<errors>8</errors>
-					<action>model/actions.yml</action>
-					<pageTemplate>model/page-template.yml</pageTemplate>
+					<action>actions.yml</action>
+					<pageTemplate>page-template.yml</pageTemplate>
 					<progressOutput>target/action-site-progress.txt</progressOutput>
+					<siteMapDomain>https://docs.nasdanika.org/demo-c4-plantuml</siteMapDomain>					
 					<diagramGenerators>
 						<diagramGenerator implementation="org.nasdanika.diagramgenerator.plantuml.PlantUMLDiagramGenerator"/>
 					</diagramGenerators>
@@ -41,7 +43,7 @@
 					<dependency>
 						<groupId>org.nasdanika</groupId>
 						<artifactId>plantuml-diagram-generator</artifactId>
-						<version>2023.2.0</version>
+						<version>2023.3.0</version>
 					</dependency>
 				</dependencies>
 			</plugin>
